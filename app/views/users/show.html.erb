@@ -1,0 +1,11 @@
+<%= flash[:notice] %>
+<div class="container px-5 px-sm-0">
+    <div class="row">
+       <%= render 'info', user: @user, book: @book %>
+
+        <div class="col-md-8 offset-md-1">
+        <h2>Books</h2>
+        <%= render 'books/list', book: @user.books %>
+        </div>
+    </div>
+</div>
